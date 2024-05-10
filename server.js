@@ -14,7 +14,7 @@ httpServer.listen(PORT, () => {
 
 const ioServer = new io.Server(httpServer, {
 	cors: {
-		origin: ["http://localhost:5500", "http://127.0.0.1:5500"],
+		origin: ["http://localhost:5500", "http://127.0.0.1:5500", "http://192.168.82.54:5500"],
 		methods: ["GET", "POST"]
 	}
 })
