@@ -26,7 +26,7 @@ ioServer.on('connection', socket => {
 		ioServer.emit('message', `${socket.id.substring(0, 7)}: ${data}`)
 	})
 
-	socket.on('disconnect', (socket.id.substring(0,7)) => {
+	socket.on('disconnect', () => {
 		console.log(`User ${socket.id} disconnected`)
 	})
 })
